@@ -57,8 +57,6 @@ else
     exit 1;
 fi
 
-read
-
 exec_trace "ls -la temp/*/*.c";
 
 for ex in $exs_to_grade; do
