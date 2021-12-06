@@ -1,0 +1,206 @@
+GRADING C 00 TOOL
+$> uname -a
+Linux arch42 5.15.5-arch1-1 #1 SMP PREEMPT Thu, 25 Nov 2021 22:09:33 +0000 x86_64 GNU/Linux
+
+$> git clone git@vogsphere-v2.42.fr:vogsphere/intra-uuid-c5a0ee0c-a998-47c5-901f-983340a3d5da-3301169 temp
+Cloning into 'temp'...
+
+$> ls -la temp/*/*.c
+-rw-r--r-- 1 tmatis tmatis  959 Dec  5 21:02 temp/ex00/ft_putchar.c
+-rw-r--r-- 1 tmatis tmatis 1016 Dec  5 21:02 temp/ex01/ft_print_alphabet.c
+-rw-r--r-- 1 tmatis tmatis 1024 Dec  5 21:02 temp/ex02/ft_print_reverse_alphabet.c
+-rw-r--r-- 1 tmatis tmatis 1015 Dec  5 21:02 temp/ex03/ft_print_numbers.c
+-rw-r--r-- 1 tmatis tmatis 1059 Dec  5 21:02 temp/ex04/ft_is_negative.c
+-rw-r--r-- 1 tmatis tmatis 1420 Dec  5 21:02 temp/ex05/ft_print_comb.c
+-rw-r--r-- 1 tmatis tmatis 1350 Dec  5 21:02 temp/ex06/ft_print_comb2.c
+-rw-r--r-- 1 tmatis tmatis 1166 Dec  5 21:02 temp/ex07/ft_putnbr.c
+
+============ex00==============
+$> cd temp/ex00
+
+$> clang -Wall -Wextra -Werror -o ../your_bin  ft_putchar.c ../../ex00/main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> cd ex00
+
+$> clang -Wall -Wextra -Werror -o ../temp/our_bin ft_putchar.c ./main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> ./temp/our_bin > ./temp/our_output
+
+$> ./temp/your_bin > ./temp/your_output
+
+$> diff -d -a ./temp/your_output ./temp/our_output
+
+============ok==============
+everything is fine
+============ex01==============
+$> cd temp/ex01
+
+$> clang -Wall -Wextra -Werror -o ../your_bin  ft_print_alphabet.c ../../ex01/main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> cd ex01
+
+$> clang -Wall -Wextra -Werror -o ../temp/our_bin ft_print_alphabet.c ./main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> ./temp/our_bin > ./temp/our_output
+
+$> ./temp/your_bin > ./temp/your_output
+
+$> diff -d -a ./temp/your_output ./temp/our_output
+
+============ok==============
+everything is fine
+============ex02==============
+$> cd temp/ex02
+
+$> clang -Wall -Wextra -Werror -o ../your_bin  ft_print_reverse_alphabet.c ../../ex02/main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> cd ex02
+
+$> clang -Wall -Wextra -Werror -o ../temp/our_bin ft_print_reverse_alphabet.c ./main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> ./temp/our_bin > ./temp/our_output
+
+$> ./temp/your_bin > ./temp/your_output
+
+$> diff -d -a ./temp/your_output ./temp/our_output
+
+============ok==============
+everything is fine
+============ex03==============
+$> cd temp/ex03
+
+$> clang -Wall -Wextra -Werror -o ../your_bin  ft_print_numbers.c ../../ex03/main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> cd ex03
+
+$> clang -Wall -Wextra -Werror -o ../temp/our_bin ft_print_numbers.c ./main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> ./temp/our_bin > ./temp/our_output
+
+$> ./temp/your_bin > ./temp/your_output
+
+$> diff -d -a ./temp/your_output ./temp/our_output
+
+============ok==============
+everything is fine
+============ex04==============
+$> cd temp/ex04
+
+$> clang -Wall -Wextra -Werror -o ../your_bin  ft_is_negative.c ../../ex04/main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> cd ex04
+
+$> clang -Wall -Wextra -Werror -o ../temp/our_bin ft_is_negative.c ./main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> ./temp/our_bin > ./temp/our_output
+
+$> ./temp/your_bin > ./temp/your_output
+
+$> diff -d -a ./temp/your_output ./temp/our_output
+
+============ok==============
+everything is fine
+============ex05==============
+$> cd temp/ex05
+
+$> clang -Wall -Wextra -Werror -o ../your_bin  ft_print_comb.c ../../ex05/main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> cd ex05
+
+$> clang -Wall -Wextra -Werror -o ../temp/our_bin ft_print_comb.c ./main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> ./temp/our_bin > ./temp/our_output
+
+$> ./temp/your_bin > ./temp/your_output
+
+$> diff -d -a ./temp/your_output ./temp/our_output
+
+============ok==============
+everything is fine
+============ex06==============
+$> cd temp/ex06
+
+$> clang -Wall -Wextra -Werror -o ../your_bin  ft_print_comb2.c ../../ex06/main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> cd ex06
+
+$> clang -Wall -Wextra -Werror -o ../temp/our_bin ft_print_comb2.c ./main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> ./temp/our_bin > ./temp/our_output
+
+$> ./temp/your_bin > ./temp/your_output
+
+$> diff -d -a ./temp/your_output ./temp/our_output
+
+============ok==============
+everything is fine
+============ex07==============
+$> cd temp/ex07
+
+$> clang -Wall -Wextra -Werror -o ../your_bin  ft_putnbr.c ../../ex07/main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> cd ex07
+
+$> clang -Wall -Wextra -Werror -o ../temp/our_bin ft_putnbr.c ./main.c
+
+$> cd -
+/home/tmatis/test_piscine/c00
+
+$> ./temp/our_bin > ./temp/our_output
+
+$> ./temp/your_bin > ./temp/your_output
+
+$> diff -d -a ./temp/your_output ./temp/our_output
+
+============ok==============
+everything is fine
+============ex08==============
+============ko==============
+no file turned in
+$> rm -rf temp
+
