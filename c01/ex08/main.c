@@ -74,9 +74,9 @@ int main(void)
 	test_int_tab(NULL, 0, false);
 	test_int_tab(tab, 1, false);
 
-	// test from size 1 to 1000
+	// test from size 1 to 100
 
-	for (int i = 1; i <= 1000; i++)
+	for (int i = 1; i <= 100; i++)
 		test_int_tab(random_int_tab(i), i, true);
 	
 }

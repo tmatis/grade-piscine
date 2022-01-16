@@ -92,7 +92,7 @@ for ex in $exs_to_grade; do
 			if [ $ret_value -eq 0 ]; then
 				printf "${GREEN}${BOLD}	[OK]${RESET}\n";
 				printf "${CYAN}${BOLD}   ${RESET} output	";
-				exec_trace "diff -d -a ./temp/your_output ./temp/our_output";
+				exec_trace "diff -u ./temp/your_output ./temp/our_output";
 				ret_value=$?;
 				if [ $ret_value -eq 0 ]; then
 					printf "${GREEN}${BOLD}	[OK]${RESET}\n";
