@@ -9,7 +9,7 @@
 /*
 ** this function generate a random int table of length n
 ** and return it as int pointer
-** number range is from -2147483648 to 2147483647
+** number range is from -1000000 to 1000000
 */
 int *random_int_tab(int n)
 {
@@ -21,7 +21,7 @@ int *random_int_tab(int n)
 	i = 0;
 	while (i < n)
 	{
-		tab[i] = rand() % ((long)INT_MAX - (long)INT_MIN) + (long)INT_MIN;
+		tab[i] = rand() % (1000000 - -1000000) + -1000000;
 		i++;
 	}
 	return (tab);
